@@ -12,6 +12,7 @@ const app = express();
 
 // Set up middleware
 app.use(cors());
+app.use(express.json());
 
 // Home route for testing app
 app.get('/', (req, res) => {
